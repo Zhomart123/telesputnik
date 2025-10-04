@@ -1,0 +1,601 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Mulish", sans-serif;
+    outline: none;
+}
+html {
+    font-size: 16px !important;
+}
+:root {
+    --back-color: #f4f6ff;
+    --blue-color: #048afa;
+    --green-color: #25d366;
+    --strong-blue: #003d62;
+}
+body {
+    background: var(--back-color);
+}
+
+header {
+    position: fixed;
+    top: 0rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90.1%;
+    height: 5.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    z-index: 1000;
+    background-color: var(--back-color);
+}
+
+.logo img {
+    width: 4.7rem;
+    height: 4.7rem;
+    cursor: pointer;
+}
+
+nav {
+    display: flex;
+    gap: 2.5rem;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 0.9rem;
+    color: black;
+}
+nav a:hover {
+    color: var(--strong-blue);
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.contact a {
+    font-size: 0.9rem;
+    color: black;
+}
+.contact a:hover {
+    color: var(--strong-blue);
+}
+
+.whatsapp {
+    width: 2.1rem;
+    height: 2.1rem;
+    cursor: pointer;
+}
+
+.btn {
+    border: 0.1rem solid var(--blue-color);
+    border-radius: 0.8rem;
+    background: transparent;
+    color: var(--blue-color) !important;
+    font-size: 0.9rem !important;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    width: 11rem;
+    height: 3.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn:hover {
+    background-color: var(--blue-color) !important;
+    color: #fff !important;
+}
+
+.menu-btn {
+    display: none;
+    align-items: center;
+    gap: 0.8rem;
+    border: 0.1rem solid var(--blue-color);
+    background: transparent;
+    color: var(--blue-color);
+    font-size: 1rem;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    width: 8.5rem;
+    height: 3.4rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.close-icon {
+    width: 2.5rem;
+}
+
+.side-menu {
+    position: fixed;
+    top: 0;
+    left: -120%;
+    width: 25rem;
+    height: 100vh;
+    background: #fff;
+    /* box-shadow: 0.4rem 0 0.8rem rgba(0, 0, 0, 0.2); */
+    box-shadow: 0px 7px 11px 0px rgba(34, 60, 80, 0.2);
+    padding: 2rem;
+    transition: left 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    z-index: 1000;
+}
+
+.side-menu.active {
+    left: 0;
+}
+
+.side-menu nav {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.side-menu .close-btn {
+    align-self: flex-end;
+    font-size: 2rem;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    color: var(--strong-blue);
+}
+
+/* status section  */
+.status {
+    max-width: 90%;
+    margin: 0 auto;
+    margin-top: 8rem;
+    background: #e0e4f8;
+    border-radius: 1rem;
+    height: 32rem;
+    display: flex;
+    gap: 2rem;
+    padding: 1.5rem;
+    margin-bottom: 0;
+}
+
+.status-img {
+    width: 25rem;
+    height: 27rem;
+}
+
+.status-right {
+    min-width: 30rem;
+}
+
+.status-right h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+.status-right p {
+    font-size: 1rem;
+    margin-bottom: 1.8rem;
+    max-width: 33rem;
+    font-weight: 500;
+}
+
+.status-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.status-form input {
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 0.5rem;
+    width: 20rem;
+    height: 3.4rem;
+    padding: 0 10px;
+    font-weight: 500;
+}
+
+.status-form input::placeholder {
+    font-weight: 500;
+}
+
+.status-btn {
+    font-weight: 500;
+    height: 3.4rem;
+    width: 12rem;
+    border-radius: 0.5rem;
+    border: none;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: black;
+    padding: 0 10px;
+}
+
+.status-btn.blue {
+    border: 0.1rem solid var(--blue-color);
+    color: var(--blue-color);
+    background: white;
+}
+
+.status-btn.blue:hover {
+    background: var(--blue-color);
+    color: #fff;
+}
+
+.status-btn.green {
+    background: var(--green-color);
+    color: #000000;
+    border: 0.1rem solid var(--green-color);
+}
+
+.status-btn.green:hover {
+    opacity: 0.9;
+}
+
+/* Operators  */
+.operators {
+    max-width: 86%;
+    margin: 0rem auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    position: relative;
+    bottom: 3rem;
+}
+
+.operator-card {
+    min-width: 25rem;
+    height: 7rem;
+    background: #fff;
+    border-radius: 1rem;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.operator-card img {
+    width: 8rem;
+    height: 6rem;
+}
+
+.operator-btn {
+    background: var(--strong-blue);
+    color: #fff;
+    border: 0.1rem solid var(--strong-blue);
+    width: 12rem;
+    height: 3rem;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.operator-btn:hover {
+    opacity: 0.9;
+}
+
+/* steps section */
+
+.steps {
+    max-width: 90%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.steps h2 {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+}
+
+.steps-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.step-card {
+    width: 25rem;
+    min-height: 15rem;
+    background: #fff;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.1);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+    gap: .8rem;
+
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.step-card h2 {
+    font-size: 2rem;
+    margin: 0;
+    color: #aaa;
+    font-weight: bold;
+}
+
+.step-card div {
+    font-size: 1.5rem;
+    text-align: start;
+    font-weight: 700;
+    margin: 0;
+}
+
+.step-card p {
+    font-size: 1rem;
+    text-align: start;
+}
+
+.step-btn img {
+    width: 1.8rem;
+    height: 1.8rem;
+}
+
+.step-btn {
+    width: 100%;
+    height: 3.1rem;
+    background: var(--green-color);
+    border: none;
+    border-radius: 0.5rem;
+    color: black;
+    font-size: 0.9rem;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    transition: all 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+    margin-top: auto;
+}
+
+.step-card:hover .step-btn {
+    opacity: 1;
+    visibility: visible;
+    margin-top: auto;
+}
+
+.step-card.active .step-btn,
+.step-card.default-active .step-btn {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* payment section */
+
+.payment {
+    max-width: 80%;
+    height: 25rem;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    padding: 3rem;
+    background: var(--strong-blue);
+    border-radius: 1rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    color: #fff;
+}
+
+.payment-kaspi-img {
+    width: 20rem;
+    height: 18rem;
+}
+
+.payment-right {
+    max-width: 42rem;
+}
+
+.payment-right span {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #ddd;
+}
+
+.payment-right h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.payment-right p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+.payment-btn {
+    width: 18rem;
+    height: 3.2rem;
+    background: var(--blue-color);
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 0.9rem;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.payment-btn:hover {
+    opacity: 0.9;
+}
+
+/* about section  */
+
+.about {
+    max-width: 90%;
+    margin: 0 auto;
+    background: var(--back-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.about-left {
+    max-width: 45rem;
+}
+
+.about-left span {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: .8rem;
+    color: #888;
+}
+
+.about-left h2 {
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.about-left p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+.about-btn {
+    width: 18rem;
+    height: 3.2rem;
+    background: white;
+    border: 0.1rem solid var(--blue-color);
+    border-radius: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--blue-color);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.about-btn:hover {
+    background: var(--blue-color);
+    color: #fff;
+}
+
+.about-img {
+    /* width: 30rem; */
+    /* height: 30rem; */
+}
+
+/* id cards section */
+
+.id-section {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.id-section h1 {
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.id-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.id-card {
+    display: flex;
+    justify-content: space-between;
+}
+
+.id-card-text {
+    background: #fff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.id-card-text h2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+}
+
+.id-card-text p,
+.id-card-text ul {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 0.8rem;
+    color: #333;
+}
+
+.id-card-text strong {
+    font-weight: 700;
+    color: #000;
+}
+
+.id-card-text ul {
+    padding-left: 1.2rem;
+    list-style: disc;
+}
+
+.id-card-image {
+    margin-top: 1rem;
+    border-radius: 8px;
+    object-fit: contain;
+    height: 20rem;
+}
+
+.id-btn {
+    display: inline-block;
+    background: var(--blue-color);
+    color: #fff;
+    font-size: 0.95rem;
+    font-weight: 600;
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    text-align: center;
+    margin-top: 1rem;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.id-btn:hover {
+    background: var(--strong-blue);
+}
+
+.operators{
+    display: none;
+}
+
+@media (max-width: 1080px) {
+    .phone {
+        display: none;
+    }
+}
+@media (max-width: 900px) {
+    nav,
+    .contact {
+        display: none;
+    }
+
+    .menu-btn {
+        display: flex;
+    }
+}
