@@ -8,38 +8,46 @@
     </head>
     <body>
         <header>
-            <div class="logo">
-                <a href="#"><img src="./images/logo.svg" alt="Логотип" /></a>
-            </div>
-            <nav>
-                <a href="#">Главная</a>
-                <a href="#">Телекарта</a>
-                <a href="#">Триколор</a>
-                <a href="#">НТВ Плюс</a>
-                <a href="#">О компании</a>
-                <a href="#">qwertyuiojhcvbnm,</a>
-            </nav>
+            <div class="head">
 
-            <div class="contact">
-                <a href="">+7-708-818-81-82</a>
-                <a href="">
-                    <img
-                        src="./images/whatsapp.svg"
-                        alt="WhatsApp"
-                        class="whatsapp"
-                    />
-                </a>
-                <a href="" class="btn">Оставить заявку</a>
+                <div class="logo">
+                    <a href="#"><img src="./images/logo.svg" alt="Логотип" /></a>
+                </div>
+                <nav>
+                    <a href="#">Главная</a>
+                    <a href="#">Телекарта</a>
+                    <a href="#">Триколор</a>
+                    <a href="#">НТВ Плюс</a>
+                    <a href="#">О компании</a>
+                </nav>
+    
+                <div class="contact">
+                    <a href="">+7-708-818-81-82</a>
+                    <a href="">
+                        <img
+                            src="./images/whatsapp.svg"
+                            alt="WhatsApp"
+                            class="whatsapp"
+                        />
+                    </a>
+                    <a href="" class="btn">Оставить заявку</a>
+                </div>
+    
+                <button class="menu-btn">
+                    <span>Меню</span>
+                    <img class="close-icon" src="./images/close.svg" alt="" />
+                </button>
             </div>
-
-            <button class="menu-btn">
-                <span>Меню</span>
-                <img class="close-icon" src="./images/close.svg" alt="" />
-            </button>
         </header>
 
         <aside class="side-menu">
-            <button class="close-btn">✖</button>
+            <div class="side-head">
+                <img class="side-img" src="./images/logo.svg" alt="">
+                <button class="menu-btn close-button">
+                    <span>Закрыть</span>
+                    <img class="close-icon" src="./images/close.svg" alt="" />
+                </button>
+            </div>
             <nav>
                 <a href="#">Главная</a>
                 <a href="#">Телекарта</a>
@@ -47,7 +55,8 @@
                 <a href="#">НТВ Плюс</a>
                 <a href="#">О компании</a>
             </nav>
-            <div class="contact">
+            <div class="contact-side">
+                <a href="">+7-708-818-81-82</a>
                 <img
                     src="./images/whatsapp.svg"
                     alt="WhatsApp"
@@ -62,8 +71,8 @@
 
             <div class="status-right">
                 <h2>
-                    ПРОВЕРЬТЕ СТАТУС <br />
-                    ВАШЕЙ КАРТЫ <img src="./images/blure-line.svg" alt="" />
+                    ПРОВЕРЬТЕ СТАТУС
+                    ВАШЕЙ КАРТЫ <div class="line-div"><img class="line" src="./images/blure-line.svg" alt="" /></div> 
                 </h2>
                 <p>
                     Мы обеспечиваем быструю и безопасную оплату, а также
@@ -74,10 +83,10 @@
                 <form class="status-form">
                     <input type="text" placeholder="Номер карты" />
                     <div class="main-btns">
-                        <button type="button" class="status-btn blue">
+                        <button type="submit" class="status-btn blue">
                             ПРОВЕРИТЬ КАРТУ
                         </button>
-                        <button type="button" class="status-btn green">
+                        <button type="submit" class="status-btn green">
                             ОПЛАТИТЬ ТВ
                         </button>
                     </div>
@@ -219,22 +228,42 @@
                         </p>
                         <a href="" class="id-btn">ОПЛАТИТЬ</a>
                     </div>
-                        <img src="./images/id1.jpg" class="id-card-image" alt="Телекара пример" />
+                    <img
+                        src="./images/id1.jpg"
+                        class="id-card-image"
+                        alt="Телекара пример"
+                    />
                 </div>
 
                 <div class="id-card">
-                        <img src="./images/id2.jpg" class="id-card-image" alt="Триколор карта" />
+                    <img
+                        src="./images/id2.jpg"
+                        class="id-card-image"
+                        alt="Триколор карта"
+                    />
                     <div class="id-card-text">
                         <h2>ГДЕ НАЙТИ НОМЕР КАРТЫ ТРИКОЛОР ТВ?</h2>
-                        <ul>
+                        <p>
+                            Номер карты (ID оборудования) можно посмотреть в нескольких местах:
+                        </p>
+                        <ol>
                             <li>
-                                На смарт-карте под штрих-кодом (12–14 знаков)
+                                На смарт-карте
                             </li>
+                            <ul>
+                                <li>
+                                    В нижней части карты под штрих-кодом указан номер. Это длинная комбинация цифр (обычно 12–14 знаков).
+                                </li>
+                            </ul>
                             <li>
-                                В абонентском договоре — ищите «ID приёмного
-                                оборудования»
+                                В абонентском договоре
                             </li>
-                        </ul>
+                            <ul>
+                                <li>
+                                    Найдите графу «ID приёмного оборудования».
+                                </li>
+                            </ul>
+                        </ol>
                         <a href="" class="id-btn">ОПЛАТИТЬ</a>
                     </div>
                 </div>
@@ -244,7 +273,10 @@
                         <h2>ГДЕ НАЙТИ НОМЕР КАРТЫ НТВ-ПЛЮС?</h2>
                         <p>
                             Номер карты доступа к услугам НТВ-Плюс находится на
-                            самой карте абонента. Его можно увидеть:
+                            самой карте абонента.
+                        </p>
+                        <p>
+                            Его можно увидеть:
                         </p>
                         <ul>
                             <li>На обратной стороне карты</li>
@@ -255,10 +287,159 @@
                         </ul>
                         <a href="" class="id-btn">ОПЛАТИТЬ</a>
                     </div>
-                        <img src="./images/id3.jpg" class="id-card-image" alt="НТВ Плюс карта" />
+                    <img
+                        src="./images/id3.jpg"
+                        class="id-card-image"
+                        alt="НТВ Плюс карта"
+                    />
                 </div>
             </div>
         </section>
+
+        <section class="announcements">
+            <p>// Объявления</p>
+            <div class="quote-head">
+                <h2>ВАЖНАЯ ИНФОРМАЦИЯ ДЛЯ АБОНЕНТОВ</h2>
+                <img
+                    src="./images/kovychka.svg"
+                    alt="quote-mark"
+                    class="quote-mark"
+                />
+            </div>
+            <div class="announcements-wrapper">
+                <div class="announcement-card">
+                    <img
+                        src="./images/icon-helmet.svg"
+                        alt="Tech works"
+                        class="announcement-icon"
+                    />
+                    <h3>ТЕХНИЧЕСКИЕ РАБОТЫ</h3>
+                    <p>
+                        12 сентября 2025 года с 02:00 до 10:00 по времени Астаны
+                        на телеканалах Триколор будут проводиться плановые
+                        профилактические работы.
+                    </p>
+                </div>
+                <div class="announcement-card">
+                    <img
+                        src="./images/icon-helmet.svg"
+                        alt="Tech works"
+                        class="announcement-icon"
+                    />
+                    <h3>ТЕХНИЧЕСКИЕ РАБОТЫ</h3>
+                    <p>
+                        12 сентября 2025 года с 02:00 до 10:00 по времени Астаны
+                        на телеканалах Триколор будут проводиться плановые
+                        профилактические работы.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div>
+                <img
+                    src="./images/feature1.svg"
+                    alt="Оплата"
+                    class="feature-icon"
+                />
+                <h3>Простая и быстрая оплата</h3>
+                <p>
+                    Оплачивайте через Kaspi и любые другие банки — удобно и без
+                    лишних действий.
+                </p>
+            </div>
+            <div>
+                <img
+                    src="./images/feature2.svg"
+                    alt="Гарантия"
+                    class="feature-icon"
+                />
+                <h3>100% гарантия платежей</h3>
+                <p>
+                    Все операции надежно защищены, средства поступают на ваш
+                    счет без задержек.
+                </p>
+            </div>
+            <div>
+                <img
+                    src="./images/feature3.svg"
+                    alt="Поддержка"
+                    class="feature-icon"
+                />
+                <h3>Круглосуточная поддержка</h3>
+                <p>
+                    Оплачивайте через Kaspi и любые другие банки — удобно и без
+                    лишних действий.
+                </p>
+            </div>
+            <div>
+                <img
+                    src="./images/feature4.svg"
+                    alt="Активация ТВ"
+                    class="feature-icon"
+                />
+                <h3>Мгновенная активация ТВ</h3>
+                <p>
+                    Ваше телевидение начинает работать уже через 5–10 минут
+                    после оплаты.
+                </p>
+            </div>
+        </section>
+
+        <section class="request">
+            <div class="request-text">
+                <h2>ОСТАВЬТЕ ЗАЯВКУ ОНЛАЙН</h2>
+                <p>
+                    Укажите ваши контактные данные и оператора спутникового ТВ.
+                    Наш менеджер свяжется с вами в ближайшее время, поможет
+                    рассчитать тариф и выставит счёт на оплату.
+                </p>
+            </div>
+            <form class="request-form">
+                <input type="text" placeholder="Имя" required />
+                <input type="tel" placeholder="Номер телефона" required />
+                <textarea placeholder="Комментарии"></textarea>
+                <button class="form-btn" type="submit">ОТПРАВИТЬ ЗАЯВКУ</button>
+            </form>
+        </section>
+
+        <footer class="footer">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <img src="./images/logo.svg" alt="Телеспутник" />
+                    <a href="" class="support-btn">ТЕХПОДДЕРЖКА +7-708-818-81-82</a>
+                </div>
+
+                <div class="foot">
+                    <strong>КОНТАКТЫ</strong>
+                    <a href="">+7-708-818-81-82</a>
+                    <a href="">Whatsapp</a>
+                    <a href="">telesputnik.kztv@gmail.com</a>
+                </div>
+
+                <div class="foot">
+                    <strong>РАЗДЕЛЫ</strong>
+                    <a href="">Как происходит оплата</a>
+                    <a href="">Способы оплаты</a>
+                    <a href="">О компании</a>
+                    <a href="">Объявления</a>
+                    <a href="">Преимущества</a>
+                </div>
+
+                <div class="foot">
+                    <strong>ID НОМЕР КАРТЫ</strong>
+                    <a href="">Телекарта</a>
+                    <a href="">Триколор</a>
+                    <a href="">НТВ Плюс</a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div>Made by Media Peace 2025</div>
+                <a href="">Политика конфиденциальности</a>
+            </div>
+        </footer>
 
         <script src="./script.js"></script>
     </body>

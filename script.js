@@ -1,6 +1,6 @@
 const menuBtn = document.querySelector(".menu-btn");
 const sideMenu = document.querySelector(".side-menu");
-const closeBtn = document.querySelector(".close-btn");
+const closeBtn = document.querySelector(".close-button");
 
 menuBtn.addEventListener("click", () => {
     sideMenu.classList.add("active");
